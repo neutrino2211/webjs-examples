@@ -1,0 +1,23 @@
+{
+	"name": "angular",
+	"description": "Simple Angular example",
+	"version": "0.0.1",
+	"main": "src/index.html",
+	"license": "MIT",
+	"scripts": {
+		"start": "parcel src/index.html --open",
+		"build": "parcel build src/index.html"
+	},
+	"dependencies": {
+		"@angular/common": "^7.0.4",
+		"@angular/compiler": "^7.0.4",
+		"@angular/core": "^7.0.4",
+		"@angular/platform-browser": "^7.0.4",
+		"@angular/platform-browser-dynamic": "^7.0.4",
+		"core-js": "^2.5.7",
+		"rxjs": "^6.3.3",
+		"systemjs": "^2.1.1",
+		"zone.js": "^0.8.26"
+	},
+	"author": "Tsowa Mainasara Al-amin"
+}
