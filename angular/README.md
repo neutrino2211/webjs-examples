@@ -1,6 +1,6 @@
-# webjs JAVASCRIPT
+# webjs ANGULAR
 
-This is the starter project for every javascript application.
+This is the starter project for every angular application.
 
 ## Run
 
@@ -20,7 +20,7 @@ First make your wjs-config.json look like this
 
 ```json
 {
-	"project-type": "javascript",
+	"project-type": "angular",
 	"root": "dist",
 	"local": false,
 	"entry": "src/index.html",
@@ -54,18 +54,24 @@ Coming soon
 ## Important Files
 
 ```js
-//index.js
-import * as app from "../webjs_modules/app";
+//./components/Main.component.ts
+import { Component } from '@angular/core';
 
-class App {
-    constructor (root){
-        root.innerHTML = "<h1>Hello World</h1>";
-    }
+@Component({
+    selector: 'my-app',
+    template: `
+        <div>
+            <h1>{{text}}</h1>
+        </div>`,
+    styles: [
+        'h1 { font-weight: 300; }',
+        'div {display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;}'
+    ]
+})
 
-    onViewLoad(){
-        console.log("Done")
-    }
+export class MainComponent {
+    text: string = 'Hello World from Angular! 📦 🚀';
+
+    constructor() {}
 }
-
-app.load(document.getElementById("js-main"),App);
 ```
