@@ -14,6 +14,14 @@ $ wjs development
 $ wjs build
 ```
 
+## Test
+
+```bash
+wjs test
+```
+
+This performs a basic build test
+
 ## Android
 
 First make your wjs-config.json look like this

@@ -9,12 +9,20 @@ To publish the package, run
 $ wjs publish <path-to-package> --type=task
 ```
 
+## Test
+
+```bash
+wjs test
+```
+
+This performs a basic build test
+
 ## Important Files
 
 ```js
 //engine.js
 /**
- * utils contains the wjs utility object
+ * utils contains the wjs utility object (passed in as the third argument)
  * cwd is the directory the task is running in
  * args is the command line arguments converted to an object e.g the arguments of
  * wjs run <your-task> --print --text="Hello World" will be {print:true,text:"Hello World"}
